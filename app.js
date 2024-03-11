@@ -149,16 +149,18 @@ function createModal(){
     }
 }
 
-
+createModal()//모달창 아이템 생성
+createItem()//룩북아이템생성
 const modal = document.querySelector('.lookbook-modal')
 const exit = modal.querySelector('.exit')
 const showModel = modal.querySelector('.show-model')
 const modalPrev = modal.querySelector('.modal-prev')
 const modalNext = modal.querySelector('.modal-next')
 
+
 const lookItems = lookbookContainer.querySelectorAll('.item')
 const modalItems = modalContainer.querySelectorAll('.model')
-
+console.log(lookItems)
 let scrollY
 
 // console.log(lookItems)
@@ -241,8 +243,7 @@ function navAnime(){
 }
 
 
-createModal()//모달창 아이템 생성
-createItem()//룩북아이템생성
+
 creditPrev.addEventListener('click',moveToRight)//크레딧 슬라이드
 creditNext.addEventListener('click',moveToLeft)//크레딧 슬라이드
 creditContainer.addEventListener('mousedown', handleMouseDown)//크레딧 슬라이드

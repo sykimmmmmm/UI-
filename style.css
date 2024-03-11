@@ -56,7 +56,7 @@ header a span{
     top: 0;
     padding: 40px;
     margin: 0 auto;
-    margin-top: -3rem;
+    margin-top: -8rem;
     margin-bottom: 3rem;
     z-index: 1;
 }
@@ -177,6 +177,7 @@ header a span{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    transition: 1s ease-in-out;
 }
 .group-container{
     display: flex;
@@ -217,6 +218,7 @@ header a span{
     color: white;
     padding: 10px;
     user-select: none;
+    transition: 1s ease-in-out;
 }
 /* shop last season */
 #shop,#lastseason{
@@ -385,9 +387,7 @@ button:disabled{
 
 
 /* modal */
-.show{
-    display: block;
-}
+
 .hide{
     display: none;
 }
